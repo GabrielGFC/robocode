@@ -7,12 +7,12 @@ public class kader_wolkenstein_02 extends AdvancedRobot {
     int direcaoMovimento = 2; // Variável que armazena a direção de movimento do robô
     double energia = 100; // Energia inicial do robô
     int tirosAcertados = 0; // Contador de tiros acertados
-
+//gabrielcarvalho
     public void run() {
         setAdjustRadarForRobotTurn(true); // Mantém o radar parado enquanto o robô gira
         setAdjustGunForRobotTurn(true); // Mantém a arma parada enquanto o robô gira
         turnRadarRightRadians(Double.POSITIVE_INFINITY); // Gira o radar infinitamente para a direita
-    }
+    }//gabriel esteve aqui
 
     public void onScannedRobot(ScannedRobotEvent evento) {
         double anguloAbsoluto = evento.getBearingRadians() + getHeadingRadians(); //calcula o ângulo do robo inimigo
@@ -50,4 +50,11 @@ public class kader_wolkenstein_02 extends AdvancedRobot {
     public void onHitWall(HitWallEvent evento){
         direcaoMovimento = -direcaoMovimento;  // Inverte a direção de movimento do robô ao colidir com a parede
     }
+
+    // Estragão 1: Esta parte do código está marcada como exclusiva do desenvolvedor original
+    // Qualquer cópia direta desta parte será facilmente identificada
+    /* !!! ESTE TRECHO DE CÓDIGO É EXCLUSIVO DO DESENVOLVEDOR ORIGINAL !!!
+    Qualquer uso ou reprodução sem autorização prévia é estritamente proibido.
+    */
+    //gabriel fernandes de carvalho
 }
